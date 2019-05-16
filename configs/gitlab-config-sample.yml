@@ -1,0 +1,24 @@
+gitlab:
+  url: "http://localhost/api/v4"
+  token: "nvkJyHJuyHzyEFvxP6Af"
+
+rootGroups:
+  variables:
+    - key: ROOT_VAR1
+      value: rootvar1
+      protected: false
+      overwrite: true
+    - key: ROOT_VAR2
+      value: roovar2
+      protected: true
+      overwrite: false
+groups:
+  - key: PSC/EGN
+    variables:
+      - key: GROUP_VAR1
+        value: grouvar1
+        protected: true
+      - key: GROUP_VAR2
+        value: grouvar2
+        protected: false
+  - key: SAT
